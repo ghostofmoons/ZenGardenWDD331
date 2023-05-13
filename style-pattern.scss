@@ -2,6 +2,8 @@
 @use 'atoms';
 //@use 'molecules';
 //@use 'organisms' as o;
+@import url('https://fonts.googleapis.com/css2?family=Michroma&display=swap');
+@import url('Gotham-font/GothamProNarrow-Medium.ttf');
 
 * {
   box-sizing: border-box;
@@ -63,4 +65,10 @@ section {
 }
 .uppercase-light {
   @include atoms.uppercase($text-light);
+}
+
+
+/*Implementing fonts and colors */
+h1, h2, h3 {
+  font-family: $fonts-headline;
 }
