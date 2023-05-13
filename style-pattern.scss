@@ -4,6 +4,8 @@
 //  *   | ^^^^^^^^^^^^^^^^^^^^^
 //  *   '
 //  *   style-pattern.scss 1:1  root stylesheet */
+// 
+  @use '/variables' as *; //this puts all the variables in the global namespace.
 
 body::before {
   font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
