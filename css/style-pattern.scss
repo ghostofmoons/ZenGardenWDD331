@@ -3,7 +3,7 @@
 //@use 'molecules';
 //@use 'organisms' as o;
 @import url('https://fonts.googleapis.com/css2?family=Michroma&display=swap');
-@import url('Gotham-font/GothamProNarrow-Medium.ttf');
+
 
 * {
   box-sizing: border-box;
@@ -14,7 +14,7 @@ html {
 }
 
 body {
-  font-family: $fonts-body;
+  font-family: var($fonts-body);
   font-size: 85%;
   color: $text-dark;
   background-color: $primary;
@@ -72,3 +72,4 @@ section {
 h1, h2, h3 {
   font-family: $fonts-headline;
 }
+

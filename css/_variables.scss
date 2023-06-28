@@ -1,5 +1,5 @@
 $fonts-headline: "michroma", Arial, sans-serif;
-$fonts-body: "gotham", arial, sans-serif;
+$fonts-body: "Gotham";
 $background-color: #C7E6EB;
 $primary: #207780;
 $accent1: #FC3D21;
@@ -9,4 +9,11 @@ $text-dark: #333;
 $text-light: #fff;
 
 @import url('https://fonts.googleapis.com/css2?family=Michroma&display=swap');
-@import url('Gotham-font/GothamProNarrow-Medium.ttf');
+
+@font-face {
+  font-family: 'Gotham';
+  src: url('../Gotham-font/GothamProNarrow-Medium.woff2') format('woff2'),
+       url('../Gotham-font/GothamProNarrow-Medium.woff') format('woff'),
+       url('../Gotham-font/GothamProNarrow-Medium.ttf') format('truetype');
+  font-style: normal;
+}
