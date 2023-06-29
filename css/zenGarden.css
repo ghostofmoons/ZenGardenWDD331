@@ -4,6 +4,7 @@
   src: url("../Gotham-font/GothamProNarrow-Medium.woff2") format("woff2"), url("../Gotham-font/GothamProNarrow-Medium.woff") format("woff"), url("../Gotham-font/GothamProNarrow-Medium.ttf") format("truetype");
   font-style: normal;
 }
+/*Mobile view*/
 html {
   margin: 0;
   padding: 0;
@@ -12,10 +13,21 @@ html {
 
 p, a {
   font-family: "michroma", Arial, sans-serif;
-  font-size: 0.8rem;
+  font-size: 0.6rem;
 }
 
 h1, h2, h3 {
   font-family: "michroma", Arial, sans-serif;
   color: #333;
+  font-size: 1em;
+}
+
+.page-wrapper > * {
+  border: 2px solid black;
+}
+
+.page-wrapper {
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: repeat(auto-fill, minmax(1fr, 50vh));
 }/*# sourceMappingURL=zenGarden.css.map */

@@ -1,5 +1,7 @@
 @use 'variables' as *; //this puts all the variables in the global namespace.
 
+
+/*Mobile view*/
 html {
 	margin: 0;
 	padding: 0;
@@ -8,11 +10,20 @@ html {
 
 p, a{
   font-family: $fonts-headline;
-  font-size: 0.8rem;
+  font-size: 0.6rem;
 }
 
 h1, h2, h3 {
   font-family: $fonts-headline;
   color: $text-dark;
+  font-size: 1em;
 }
 
+.page-wrapper > *{
+  border: 2px solid black;
+}
+.page-wrapper {
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: repeat(auto-fill, minmax(1fr, 50vh));
+}
