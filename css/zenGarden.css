@@ -1,0 +1,19 @@
+@import url("https://fonts.googleapis.com/css2?family=Michroma&display=swap");
+@font-face {
+  font-family: "Gotham";
+  src: url("../Gotham-font/GothamProNarrow-Medium.woff2") format("woff2"), url("../Gotham-font/GothamProNarrow-Medium.woff") format("woff"), url("../Gotham-font/GothamProNarrow-Medium.ttf") format("truetype");
+  font-style: normal;
+}
+html {
+  margin: 0;
+  padding: 0;
+  background-color: #C7E6EB;
+}
+
+p, a {
+  font-family: "michroma", Arial, sans-serif;
+}
+
+h1, h2, h3 {
+  font-family: "michroma", Arial, sans-serif;
+}/*# sourceMappingURL=zenGarden.css.map */
