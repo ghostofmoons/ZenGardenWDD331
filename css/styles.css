@@ -1,23 +1,44 @@
 @import url("https://fonts.googleapis.com/css2?family=Michroma&display=swap");
 @import url("Gotham-font/GothamProNarrow-Medium.ttf");
+body {
+  color: #207780;
+  background-color: #C7E6EB;
+}
+
 .design-selection {
-  justify-content: items;
-  border: #207780 solid 2px;
-  background-image: linear-gradient(#207780, #FC3D21, #207780);
+  background-image: url(/images/fullNebula_Crop.jpg);
 }
 
 .design-selection h3 {
-  padding-top: 10px;
-  color: white;
+  padding: 10px 0 0 40px;
+  font-family: "michroma", Arial, sans-serif;
+  font-weight: bold;
+  margin-bottom: 0;
+  font-size: 1.75rem;
+  color: #FC3D21;
 }
 
 .design-selection nav {
   display: flex;
-  color: white;
+  font-family: "gotham", arial, sans-serif;
+  font-weight: bolder;
+  font-size: 1.2rem;
+}
+
+.design-selection a, .design-selection nav {
+  color: #C7E6EB;
 }
 
 .design-selection a {
-  color: white;
+  text-decoration: none;
+}
+
+.design-selection ul {
+  list-style-type: none;
+}
+
+.design-selection li {
+  padding-top: 0.5rem;
 }
 
 /*# sourceMappingURL=styles.css.map */
