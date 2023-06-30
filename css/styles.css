@@ -1,3 +1,23 @@
+@import url("https://fonts.googleapis.com/css2?family=Michroma&display=swap");
+@import url("Gotham-font/GothamProNarrow-Medium.ttf");
+.design-selection {
+  justify-content: items;
+  border: #207780 solid 2px;
+  background-image: linear-gradient(#207780, #FC3D21, #207780);
+}
 
+.design-selection h3 {
+  padding-top: 10px;
+  color: white;
+}
+
+.design-selection nav {
+  display: flex;
+  color: white;
+}
+
+.design-selection a {
+  color: white;
+}
 
 /*# sourceMappingURL=styles.css.map */

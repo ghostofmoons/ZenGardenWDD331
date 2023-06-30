@@ -1,6 +1,19 @@
 //Set up modules
-@use "atoms";
-@use "molecules";
-@use "organisms";
+@use "variables";
 
-
+.design-selection {
+    justify-content: items; 
+    border: variables.$primary solid 2px;  
+    background-image: linear-gradient(variables.$primary,variables.$accent1,variables.$primary);
+}
+.design-selection h3 {
+    padding-top: 10px;    
+    color: variables.$accent2;
+}
+.design-selection nav {
+    display: flex;
+    color: variables.$accent2;
+}
+.design-selection a {
+    color: variables.$accent2;
+}
