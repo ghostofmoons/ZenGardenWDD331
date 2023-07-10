@@ -48,8 +48,8 @@ Make look like a large planet
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 25rem;
-    width: 25rem;
+    height: 25.5rem;
+    width: 25.5rem;
     background-image: linear-gradient(-26deg, variables.$primary 20%,         
         variables.$accent1, variables.$grey-sidebar, variables.$text-dark,
         variables.$primary,variables.$background-color,
@@ -58,7 +58,7 @@ Make look like a large planet
     font-family: variables.$fonts-body;  
     font-weight: bolder;
     font-size: 1.2rem;
-    padding: .5rem;
+    padding: .7rem;
 }
 .design-selection a, .design-selection nav {
     color: variables.$background-color;
@@ -74,6 +74,7 @@ Make look like a large planet
 }
 .design-selection li {
     padding-top: .5rem;
+    color: variables.$background-color;
 }
 .design-selection h3 {    
     font-family: variables.$fonts-headline;
