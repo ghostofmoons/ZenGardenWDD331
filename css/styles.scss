@@ -12,8 +12,15 @@ body {
 
 
 
+
+
+
+
+
+
 /*------------------------------------------
-    Side bar flex set up and design
+    Side bar flex set up and design.   
+    Three planets
 -------------------------------------------*/
 .wrapper {
     display: flex;
@@ -26,7 +33,7 @@ body {
 
 /*----------------------------------------------------------
 Select a design  set up and design.  Navigation flex set up.
-Make look like a planet
+Make look like a large planet
 -----------------------------------------------------------*/
 
 .design-selection {
@@ -68,29 +75,111 @@ Make look like a planet
 .design-selection li {
     padding-top: .5rem;
 }
-/*.design-selection {
-   background-image: url(/images/centerNebula.webp);
-   
-}
-.design-selection h3 {
-    padding: 10px 0 0 40px;
+.design-selection h3 {    
     font-family: variables.$fonts-headline;
     font-weight: bold;
     margin-bottom: 0; 
     font-size: 1.75rem; 
-    color: variables.$accent1;    
+    color: variables.$text-light;    
 }
 
-.design-selection a, .design-selection nav {
-    color: variables.$background-color;
+
+
+
+/*----------------------------------------------------------
+Archives area set up and design.  Navigation flex set up
+Make look like a small planet
+----------------------------------------------------------*/
+
+.design-archives {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
-.design-selection a  {
+
+.design-archives nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 10rem;
+    width: 10rem;
+    background-image: linear-gradient(-36deg, variables.$accent1 20%,         
+        variables.$text-light,
+        variables.$background-color, variables.$accent1 80%);        
+    border-radius: 50%;
+    font-family: variables.$fonts-body;  
+    font-weight: bolder;
+    font-size: 1.2rem;
+    padding: .5rem;
+}
+.design-archives a, .design-selection nav {
+    color: variables.$text-dark;
+}
+
+.design-archives a  {
     text-decoration: none;
    }
-.design-selection ul {
+.design-archives ul {
     list-style-type: none;
 }
-.design-selection li {
+.design-archives li {
     padding-top: .5rem;
-}*/
+}
+.design-archives h3 {    
+    font-family: variables.$fonts-headline;
+    font-weight: bold;
+    margin-bottom: 0; 
+    font-size: 1.75rem; 
+    color: variables.$text-light;   
+}
 
+
+
+/*------------------------------------------------------
+Resources set up and design. Navigation flex set up
+Make look like a medium planet
+------------------------------------------------------*/
+.zen-resources {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.zen-resources ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 18rem;
+    width: 18rem;
+    background-image: linear-gradient(36deg, variables.$background-color 15%,
+        variables.$primary, variables.$text-dark, variables.$primary 55%, variables.$grey-sidebar, 
+        variables.$primary, variables.$background-color 85%);        
+    border-radius: 50%;
+    font-family: variables.$fonts-body;  
+    font-weight: bolder;
+    font-size: 1.2rem;
+    padding: .5rem;
+    list-style-type: none;
+}
+.zen-resources a, .zen-resources ul {
+    color: variables.$text-light;
+}
+
+.zen-resources a  {
+    text-decoration: none;
+   }
+
+.zen-resources li {
+    padding-top: .5rem;
+}
+.zen-resources h3 {    
+    font-family: variables.$fonts-headline;
+    font-weight: bold;
+    margin-bottom: 0; 
+    font-size: 1.75rem; 
+    color: variables.$text-light;   
+}
