@@ -1,28 +1,50 @@
 @import url("https://fonts.googleapis.com/css2?family=Michroma&display=swap");
 @import url("Gotham-font/GothamProNarrow-Medium.ttf");
+/*-------------------------
+Set up the body basics
+----------------------------*/
 body {
   color: #207780;
   background-color: #C7E6EB;
 }
 
-.design-selection {
-  background-image: url(/images/fullNebula_Crop.jpg);
+/*------------------------------------------
+    Side bar flex set up and design
+-------------------------------------------*/
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(51, 55, 69, 0.9);
 }
 
-.design-selection h3 {
-  padding: 10px 0 0 40px;
-  font-family: "michroma", Arial, sans-serif;
-  font-weight: bold;
-  margin-bottom: 0;
-  font-size: 1.75rem;
-  color: #FC3D21;
+/*----------------------------------------------------------
+Select a design  set up and design.  Navigation flex set up.
+Make look like a planet
+-----------------------------------------------------------*/
+.design-selection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .design-selection nav {
   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 25rem;
+  width: 25rem;
+  background-image: linear-gradient(-26deg, #207780 20%, #FC3D21, rgba(51, 55, 69, 0.9), #333, #207780, #C7E6EB, #207780 98%);
+  border-radius: 50%;
   font-family: "gotham", arial, sans-serif;
   font-weight: bolder;
   font-size: 1.2rem;
+  padding: 0.5rem;
+}
+
+.design-selection a, .design-selection nav {
+  color: #C7E6EB;
 }
 
 .design-selection a, .design-selection nav {
@@ -40,5 +62,31 @@ body {
 .design-selection li {
   padding-top: 0.5rem;
 }
+
+/*.design-selection {
+   background-image: url(/images/centerNebula.webp);
+
+}
+.design-selection h3 {
+    padding: 10px 0 0 40px;
+    font-family: variables.$fonts-headline;
+    font-weight: bold;
+    margin-bottom: 0; 
+    font-size: 1.75rem; 
+    color: variables.$accent1;    
+}
+
+.design-selection a, .design-selection nav {
+    color: variables.$background-color;
+}
+.design-selection a  {
+    text-decoration: none;
+   }
+.design-selection ul {
+    list-style-type: none;
+}
+.design-selection li {
+    padding-top: .5rem;
+}*/
 
 /*# sourceMappingURL=styles.css.map */

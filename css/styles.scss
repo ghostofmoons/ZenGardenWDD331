@@ -1,28 +1,60 @@
 //Set up modules
 @use "variables";
+
+/*-------------------------
+Set up the body basics
+----------------------------*/
+
 body {
     color: variables.$primary;
     background-color: variables.$background-color;
 }
 
 
+
+/*------------------------------------------
+    Side bar flex set up and design
+-------------------------------------------*/
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    background-color: variables.$grey-sidebar;
+}
+
+
+
+
+/*----------------------------------------------------------
+Select a design  set up and design.  Navigation flex set up.
+Make look like a planet
+-----------------------------------------------------------*/
+
 .design-selection {
-   background-image: url(/images/fullNebula_Crop.jpg);
-   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
-.design-selection h3 {
-    padding: 10px 0 0 40px;
-    font-family: variables.$fonts-headline;
-    font-weight: bold;
-    margin-bottom: 0; 
-    font-size: 1.75rem; 
-    color: variables.$accent1;    
-}
+
 .design-selection nav {
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 25rem;
+    width: 25rem;
+    background-image: linear-gradient(-26deg, variables.$primary 20%,         
+        variables.$accent1, variables.$grey-sidebar, variables.$text-dark,
+        variables.$primary,variables.$background-color,
+        variables.$primary 98%);        
+    border-radius: 50%;
     font-family: variables.$fonts-body;  
     font-weight: bolder;
     font-size: 1.2rem;
+    padding: .5rem;
+}
+.design-selection a, .design-selection nav {
+    color: variables.$background-color;
 }
 .design-selection a, .design-selection nav {
     color: variables.$background-color;
@@ -36,3 +68,29 @@ body {
 .design-selection li {
     padding-top: .5rem;
 }
+/*.design-selection {
+   background-image: url(/images/centerNebula.webp);
+   
+}
+.design-selection h3 {
+    padding: 10px 0 0 40px;
+    font-family: variables.$fonts-headline;
+    font-weight: bold;
+    margin-bottom: 0; 
+    font-size: 1.75rem; 
+    color: variables.$accent1;    
+}
+
+.design-selection a, .design-selection nav {
+    color: variables.$background-color;
+}
+.design-selection a  {
+    text-decoration: none;
+   }
+.design-selection ul {
+    list-style-type: none;
+}
+.design-selection li {
+    padding-top: .5rem;
+}*/
+
