@@ -45,11 +45,7 @@ Make look like a large planet
 }
 
 .design-selection a, .design-selection nav {
-  color: #C7E6EB;
-}
-
-.design-selection a, .design-selection nav {
-  color: #C7E6EB;
+  color: #fff;
 }
 
 .design-selection a {
@@ -70,7 +66,7 @@ Make look like a large planet
   font-weight: bold;
   margin-bottom: 0;
   font-size: 1.75rem;
-  color: #fff;
+  color: #C7E6EB;
 }
 
 /*----------------------------------------------------------
@@ -120,7 +116,7 @@ Make look like a small planet
   font-weight: bold;
   margin-bottom: 0;
   font-size: 1.75rem;
-  color: #fff;
+  color: #C7E6EB;
 }
 
 /*------------------------------------------------------
@@ -167,7 +163,7 @@ Make look like a medium planet
   font-weight: bold;
   margin-bottom: 0;
   font-size: 1.75rem;
-  color: #fff;
+  color: #C7E6EB;
 }
 
 /*# sourceMappingURL=styles.css.map */

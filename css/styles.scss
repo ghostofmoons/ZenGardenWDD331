@@ -61,11 +61,9 @@ Make look like a large planet
     padding: .7rem;
 }
 .design-selection a, .design-selection nav {
-    color: variables.$background-color;
+    color: variables.$text-light;
 }
-.design-selection a, .design-selection nav {
-    color: variables.$background-color;
-}
+
 .design-selection a  {
     text-decoration: none;
    }
@@ -81,7 +79,7 @@ Make look like a large planet
     font-weight: bold;
     margin-bottom: 0; 
     font-size: 1.75rem; 
-    color: variables.$text-light;    
+    color: variables.$background-color;    
 }
 
 
@@ -133,7 +131,7 @@ Make look like a small planet
     font-weight: bold;
     margin-bottom: 0; 
     font-size: 1.75rem; 
-    color: variables.$text-light;   
+    color: variables.$background-color;   
 }
 
 
@@ -182,5 +180,5 @@ Make look like a medium planet
     font-weight: bold;
     margin-bottom: 0; 
     font-size: 1.75rem; 
-    color: variables.$text-light;   
+    color: variables.$background-color;   
 }
