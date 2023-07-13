@@ -8,8 +8,10 @@ Set up the body basics
 body {
     color: variables.$primary;
     background-color: variables.$background-color;
+    font-family: variables.$fonts-body;
 }
 
+<<<<<<< HEAD
 @media only screen and (min-width: 481px) {
     body {
         display: grid;
@@ -23,6 +25,21 @@ body {
         grid-column: 3;
     }
 }
+=======
+h1,
+h2,
+h3,
+h4 {
+  font-family: variables.$fonts-headline;
+  ;
+  margin: 0;
+}
+
+
+
+
+
+>>>>>>> 452a4a9b5e8a643a7f76382940ba8ba67a7a843a
 
 
 /*------------------------------------------
