@@ -1,11 +1,24 @@
 @import url("https://fonts.googleapis.com/css2?family=Michroma&display=swap");
-@import url("Gotham-font/GothamProNarrow-Medium.ttf");
+@font-face {
+  font-family: "Gotham";
+  src: url("../Gotham-font/GothamProNarrow-Medium.woff2") format("woff2"), url("../Gotham-font/GothamProNarrow-Medium.woff") format("woff"), url("../Gotham-font/GothamProNarrow-Medium.ttf") format("truetype");
+  font-style: normal;
+}
 /*-------------------------
 Set up the body basics
 ----------------------------*/
 body {
   color: #207780;
   background-color: #C7E6EB;
+  font-family: "Gotham", arial, sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "michroma", Arial, sans-serif;
+  margin: 0;
 }
 
 /*------------------------------------------
@@ -38,7 +51,7 @@ Make look like a large planet
   width: 25.5rem;
   background-image: linear-gradient(-26deg, #207780 20%, #FC3D21, rgba(51, 55, 69, 0.9), #333, #207780, #C7E6EB, #207780 98%);
   border-radius: 50%;
-  font-family: "gotham", arial, sans-serif;
+  font-family: "Gotham", arial, sans-serif;
   font-weight: bolder;
   font-size: 1.2rem;
   padding: 0.7rem;
@@ -89,7 +102,7 @@ Make look like a small planet
   width: 10rem;
   background-image: linear-gradient(-36deg, #FC3D21 20%, #fff, #C7E6EB, #FC3D21 80%);
   border-radius: 50%;
-  font-family: "gotham", arial, sans-serif;
+  font-family: "Gotham", arial, sans-serif;
   font-weight: bolder;
   font-size: 1.2rem;
   padding: 0.5rem;
@@ -139,7 +152,7 @@ Make look like a medium planet
   width: 18rem;
   background-image: linear-gradient(36deg, #C7E6EB 15%, #207780, #333, #207780 55%, rgba(51, 55, 69, 0.9), #207780, #C7E6EB 85%);
   border-radius: 50%;
-  font-family: "gotham", arial, sans-serif;
+  font-family: "Gotham", arial, sans-serif;
   font-weight: bolder;
   font-size: 1.2rem;
   padding: 0.5rem;
@@ -164,6 +177,4 @@ Make look like a medium planet
   margin-bottom: 0;
   font-size: 1.75rem;
   color: #C7E6EB;
-}
-
-/*# sourceMappingURL=styles.css.map */
+}/*# sourceMappingURL=styles.css.map */
