@@ -8,9 +8,17 @@ Set up the body basics
 body {
     color: variables.$primary;
     background-color: variables.$background-color;
+    font-family: variables.$fonts-body;
 }
 
-
+h1,
+h2,
+h3,
+h4 {
+  font-family: variables.$fonts-headline;
+  ;
+  margin: 0;
+}
 
 
 
