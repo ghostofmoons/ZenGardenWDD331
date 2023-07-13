@@ -10,12 +10,19 @@ body {
     background-color: variables.$background-color;
 }
 
+@media only screen and (min-width: 481px) {
+    body {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
 
-
-
-
-
-
+    }
+        .intro {
+           grid-column: span 2;
+        }
+    .wrapper {
+        grid-column: 3;
+    }
+}
 
 
 /*------------------------------------------

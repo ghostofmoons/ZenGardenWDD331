@@ -8,6 +8,18 @@ body {
   background-color: #C7E6EB;
 }
 
+@media only screen and (min-width: 481px) {
+  body {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .intro {
+    grid-column: span 2;
+  }
+  .wrapper {
+    grid-column: 3;
+  }
+}
 /*------------------------------------------
     Side bar flex set up and design.   
     Three planets
@@ -164,6 +176,4 @@ Make look like a medium planet
   margin-bottom: 0;
   font-size: 1.75rem;
   color: #C7E6EB;
-}
-
-/*# sourceMappingURL=styles.css.map */
+}/*# sourceMappingURL=styles.css.map */
