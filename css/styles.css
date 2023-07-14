@@ -26,6 +26,10 @@ h4 {
   font-family: "michroma", Arial, sans-serif;
   margin: 0;
 }
+.page-wrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+}
 /* Desktop adjustments */
 @media only screen and (min-width: 481px) {
   .page-wrapper {
@@ -43,6 +47,13 @@ h4 {
     grid-row-end: 3;
   }
 }
+/*Mobile Adjustments */
+@media only screen and (max-width: 480px) {
+  .page-wrapper{
+    grid-template-columns: 1fr;
+  }
+};
+  
 /*------------------------------------------
     Side bar flex set up and design.   
     Three planets
