@@ -31,7 +31,7 @@ h4 {
   grid-template-columns: 1fr;
 }
 /* Desktop adjustments */
-@media only screen and (min-width: 481px) {
+@media only screen and (min-width: 681px) {
   .page-wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -43,12 +43,12 @@ h4 {
   }
     aside.sidebar {
     grid-column: 3;
-    grid-row-start: 1;
+    grid-row-start: 2;
     grid-row-end: 3;
   }
 }
 /*Mobile Adjustments */
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 680px) {
   .page-wrapper{
     grid-template-columns: 1fr;
   }
