@@ -9,6 +9,8 @@ Set up the body basics
 ----------------------------*/
 
 body {
+  padding: 30px;
+  margin: 50px;
   color: #207780;
   background-color: #C7E6EB;
   font-family: "Gotham", arial, sans-serif;
