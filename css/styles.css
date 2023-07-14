@@ -19,14 +19,31 @@ header {
   font-family: "michroma", Arial, sans-serif;
   font-size: larger;
   background-color: white;
+  border-radius: 10px;
   text-align: center;
 }
+abbr {
+  color: black;
+}
+
+footer {
+  text-align: center;
+}
+
 h1,
 h2,
 h3,
 h4 {
   font-family: "michroma", Arial, sans-serif;
   margin: 0;
+}
+
+.intro h3, .supporting h3 {
+  background-color: white;
+  border-radius: 5px;
+}
+a {
+  color: #FC3D21;
 }
 .page-wrapper {
   display: grid;
@@ -212,4 +229,5 @@ Make look like a medium planet
   margin-bottom: 0;
   font-size: 1.75rem;
   color: #C7E6EB;
+
 }/*# sourceMappingURL=styles.css.map */
