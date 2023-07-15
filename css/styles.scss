@@ -11,6 +11,10 @@ body {
     font-family: variables.$fonts-body;
     padding: 30px;
     margin: 50px;
+
+    /*spiral galaxy
+    Photo by <a href="https://unsplash.com/ko/@liuchen37?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Chen Liu</a> on <a href="https://unsplash.com/photos/jgt81f_UDuU?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+    Photo by Chen Liu on Unsplash*/
     background-image: url("../images/galaxy.webp");
 }
 
@@ -22,6 +26,7 @@ h4 {
   font-family: variables.$fonts-headline;
   color: variables.$accent1;
   margin: 0;
+  transition: 0.2s;
 
 }
 header {
@@ -31,21 +36,20 @@ header {
     border-radius: 10px;
     text-align: center;
     }
-  abbr {
-    color: black;
-    }
-  
+
+ h1:hover, h2:hover {
+    color: variables.$text-dark;
+    transition: all 0.7s;
+ }
+
+/*  .intro h3:hover {
+    font-size: rem;
+ }  */
+
+
   footer {
     text-align: center;
     }
-  
-  h1,
-  h2,
-  h3,
-  h4 {
-    font-family: "michroma", Arial, sans-serif;
-    margin: 0;
-  }
   
   .intro h3, .supporting h3 {
     background-color: white;
@@ -53,10 +57,25 @@ header {
   }
   a {
     color: #FC3D21;
+    transition: all 0.4s ease;
   }
+  a:hover {
+    color: variables.$text-light;
+    font-size: 1.1rem;
+    transition: all 0.7s ease;
+
+  }
+
+
   abbr {
     color: variables.$text-light;
   }
+
+  //This is for the abbr in the heading.
+  .intro header abbr {
+    color: variables.$primary;
+  }
+
   .page-wrapper {
     display: grid;
     grid-template-columns: 1fr;
