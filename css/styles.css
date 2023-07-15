@@ -42,9 +42,15 @@ h1:hover, h2:hover {
   transition: all 0.7s;
 }
 
+.intro h3, .main h3 {
+  transition: all 1.3s ease;
+}
+
 .intro h3:hover, .main h3:hover {
-    font-size: 2rem;
- }  
+  font-size: 2rem;
+  transition: all 0.7s;
+}
+
 footer {
   text-align: center;
 }
@@ -91,7 +97,7 @@ abbr {
   }
   aside.sidebar {
     grid-column: 3;
-    grid-row-start: 2;
+    grid-row-start: 1;
     grid-row-end: 3;
   }
 }
@@ -140,6 +146,10 @@ Make look like a large planet
   color: #fff;
 }
 
+.design-archives ul, .design-selection ul {
+  padding-left: 0;
+}
+
 .design-selection a {
   text-decoration: none;
 }
@@ -172,9 +182,6 @@ Make look like a small planet
   align-items: center;
 }
 
-.design-selection ul, .design-archives ul {
-  padding-left: 0;
-}
 .design-archives nav {
   display: flex;
   flex-direction: column;
@@ -259,4 +266,6 @@ Make look like a medium planet
   margin-bottom: 0;
   font-size: 1.75rem;
   color: #C7E6EB;
-}/*# sourceMappingURL=styles.css.map */
+}
+
+/*# sourceMappingURL=styles.css.map */

@@ -41,10 +41,14 @@ header {
     color: variables.$text-dark;
     transition: all 0.7s;
  }
+ .intro h3, .main h3 {
+    transition: all 1.3s ease;}
 
-/*  .intro h3:hover {
-    font-size: rem;
- }  */
+  .intro h3:hover, .main h3:hover {
+    font-size: 2rem;
+    transition: all 0.7s;
+    
+ }  
 
 
   footer {
@@ -93,7 +97,7 @@ header {
     }
       aside.sidebar {
       grid-column: 3;
-      grid-row-start: 2;
+      grid-row-start: 1;
       grid-row-end: 3;
     }
   }
@@ -156,6 +160,9 @@ Make look like a large planet
     color: variables.$text-light;
 }
 
+.design-archives ul, .design-selection ul {
+  padding-left: 0;
+}
 .design-selection a  {
     text-decoration: none;
    }
