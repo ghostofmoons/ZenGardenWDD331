@@ -8,30 +8,20 @@
 Set up the body basics
 ----------------------------*/
 body {
-  color: #207780;
+  color: #C7E6EB;
   background-color: #C7E6EB;
   font-family: "Gotham", arial, sans-serif;
   padding: 30px;
   margin: 50px;
+  background-image: url("../images/galaxy.webp");
 }
 
-@media only screen and (min-width: 481px) {
-  body {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-  }
-  .intro {
-    grid-column: span 2;
-  }
-  .wrapper {
-    grid-column: 3;
-  }
-}
 h1,
 h2,
 h3,
 h4 {
   font-family: "michroma", Arial, sans-serif;
+  color: #FC3D21;
   margin: 0;
 }
 
@@ -68,13 +58,17 @@ a {
   color: #FC3D21;
 }
 
+abbr {
+  color: #fff;
+}
+
 .page-wrapper {
   display: grid;
   grid-template-columns: 1fr;
 }
 
 /* Desktop adjustments */
-@media only screen and (min-width: 681px) {
+@media only screen and (min-width: 710px) {
   .page-wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -103,7 +97,6 @@ a {
 .wrapper {
   display: flex;
   flex-direction: column;
-  background-color: rgba(51, 55, 69, 0.9);
 }
 
 /*----------------------------------------------------------
@@ -252,6 +245,4 @@ Make look like a medium planet
   margin-bottom: 0;
   font-size: 1.75rem;
   color: #C7E6EB;
-}
-
-/*# sourceMappingURL=styles.css.map */
+}/*# sourceMappingURL=styles.css.map */

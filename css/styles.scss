@@ -6,33 +6,24 @@ Set up the body basics
 ----------------------------*/
 
 body {
-    color: variables.$primary;
+    color: variables.$background-color;
     background-color: variables.$background-color;
     font-family: variables.$fonts-body;
     padding: 30px;
     margin: 50px;
+    background-image: url("../images/galaxy.webp");
+    background-: ;
 }
 
-@media only screen and (min-width: 481px) {
-    body {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
 
-    }
-        .intro {
-           grid-column: span 2;
-        }
-    .wrapper {
-        grid-column: 3;
-    }
-}
 h1,
 h2,
 h3,
 h4 {
   font-family: variables.$fonts-headline;
-  ;
+  color: variables.$accent1;
   margin: 0;
+
 }
 header {
     font-family: "michroma", Arial, sans-serif;
@@ -64,12 +55,15 @@ header {
   a {
     color: #FC3D21;
   }
+  abbr {
+    color: variables.$text-light;
+  }
   .page-wrapper {
     display: grid;
     grid-template-columns: 1fr;
   }
   /* Desktop adjustments */
-  @media only screen and (min-width: 681px) {
+  @media only screen and (min-width: 710px) {
     .page-wrapper {
       display: grid;
       grid-template-columns: 1fr 1fr 1fr;
@@ -87,6 +81,7 @@ header {
   }
   /*Mobile Adjustments */
   @media only screen and (max-width: 680px) {
+
     .page-wrapper{
       grid-template-columns: 1fr;
     }
@@ -105,7 +100,6 @@ header {
 .wrapper {
     display: flex;
     flex-direction: column;
-    background-color: variables.$grey-sidebar;
 }
 
 
