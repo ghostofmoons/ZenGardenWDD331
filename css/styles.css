@@ -42,9 +42,9 @@ h1:hover, h2:hover {
   transition: all 0.7s;
 }
 
-/*  .intro h3:hover {
-    font-size: rem;
- }  */
+.intro h3:hover, .main h3:hover {
+    font-size: 2rem;
+ }  
 footer {
   text-align: center;
 }
@@ -172,6 +172,9 @@ Make look like a small planet
   align-items: center;
 }
 
+.design-selection ul, .design-archives ul {
+  padding-left: 0;
+}
 .design-archives nav {
   display: flex;
   flex-direction: column;
