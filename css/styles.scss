@@ -9,9 +9,10 @@ body {
     color: variables.$primary;
     background-color: variables.$background-color;
     font-family: variables.$fonts-body;
+    padding: 30px;
+    margin: 50px;
 }
 
-<<<<<<< HEAD
 @media only screen and (min-width: 481px) {
     body {
         display: grid;
@@ -25,7 +26,6 @@ body {
         grid-column: 3;
     }
 }
-=======
 h1,
 h2,
 h3,
@@ -34,12 +34,68 @@ h4 {
   ;
   margin: 0;
 }
+header {
+    font-family: "michroma", Arial, sans-serif;
+    font-size: larger;
+    background-color: white;
+    border-radius: 10px;
+    text-align: center;
+    }
+  abbr {
+    color: black;
+    }
+  
+  footer {
+    text-align: center;
+    }
+  
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-family: "michroma", Arial, sans-serif;
+    margin: 0;
+  }
+  
+  .intro h3, .supporting h3 {
+    background-color: white;
+    border-radius: 5px;
+  }
+  a {
+    color: #FC3D21;
+  }
+  .page-wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  /* Desktop adjustments */
+  @media only screen and (min-width: 681px) {
+    .page-wrapper {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-auto-rows: minmax(150px, auto);
+      gap: 10px;
+    }
+      .intro, .supporting, .explanation {
+      grid-column: span 2;
+    }
+      aside.sidebar {
+      grid-column: 3;
+      grid-row-start: 2;
+      grid-row-end: 3;
+    }
+  }
+  /*Mobile Adjustments */
+  @media only screen and (max-width: 680px) {
+    .page-wrapper{
+      grid-template-columns: 1fr;
+    }
+  };
+    
 
 
 
 
-
->>>>>>> 452a4a9b5e8a643a7f76382940ba8ba67a7a843a
 
 
 /*------------------------------------------

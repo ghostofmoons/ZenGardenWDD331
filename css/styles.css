@@ -7,14 +7,34 @@
 /*-------------------------
 Set up the body basics
 ----------------------------*/
-
 body {
-  padding: 30px;
-  margin: 50px;
   color: #207780;
   background-color: #C7E6EB;
   font-family: "Gotham", arial, sans-serif;
+  padding: 30px;
+  margin: 50px;
 }
+
+@media only screen and (min-width: 481px) {
+  body {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .intro {
+    grid-column: span 2;
+  }
+  .wrapper {
+    grid-column: 3;
+  }
+}
+h1,
+h2,
+h3,
+h4 {
+  font-family: "michroma", Arial, sans-serif;
+  margin: 0;
+}
+
 header {
   font-family: "michroma", Arial, sans-serif;
   font-size: larger;
@@ -22,6 +42,7 @@ header {
   border-radius: 10px;
   text-align: center;
 }
+
 abbr {
   color: black;
 }
@@ -42,13 +63,16 @@ h4 {
   background-color: white;
   border-radius: 5px;
 }
+
 a {
   color: #FC3D21;
 }
+
 .page-wrapper {
   display: grid;
   grid-template-columns: 1fr;
 }
+
 /* Desktop adjustments */
 @media only screen and (min-width: 681px) {
   .page-wrapper {
@@ -57,10 +81,10 @@ a {
     grid-auto-rows: minmax(150px, auto);
     gap: 10px;
   }
-    .intro, .supporting, .explanation {
+  .intro, .supporting, .explanation {
     grid-column: span 2;
   }
-    aside.sidebar {
+  aside.sidebar {
     grid-column: 3;
     grid-row-start: 2;
     grid-row-end: 3;
@@ -68,11 +92,10 @@ a {
 }
 /*Mobile Adjustments */
 @media only screen and (max-width: 680px) {
-  .page-wrapper{
+  .page-wrapper {
     grid-template-columns: 1fr;
   }
-};
-  
+}
 /*------------------------------------------
     Side bar flex set up and design.   
     Three planets
@@ -229,5 +252,6 @@ Make look like a medium planet
   margin-bottom: 0;
   font-size: 1.75rem;
   color: #C7E6EB;
+}
 
-}/*# sourceMappingURL=styles.css.map */
+/*# sourceMappingURL=styles.css.map */
